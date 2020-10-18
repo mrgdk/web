@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1 width=device-width">
+		<title>Web Shop</title>
+		<link rel="stylesheet" media="screen and (max-width: 480px)" href="Mobile.css">
+		<link rel="stylesheet" media="screen and (min-width: 481px)" href="Screen.css">
+		<link rel="stylesheet" media="print" href="Print.css">
+		<link rel="icon" href="https://previews.123rf.com/images/martialred/martialred1512/martialred151200028/49796746-fast-free-shipping-delivery-truck-flat-icon-for-apps-and-websites.jpg">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>		
+	</head>
+
+	<body>
+		<h1>WebShop.com</h1>
+		<nav class="titleContainer">
+			<a class="inlineTitles" href="#mobilePhoneProperties">Top Selling Products' Properties</a>
+			<a class="inlineTitles" href="#headphones">Headphones & Speakers</a>
+			<a class="inlineTitles" href="#suggestion">Suggestions</a>
+			<a class="inlineTitles" href="#contact">Reach Us</a>
+			<a class="inlineTitles" href="#feedback">Let Us Know!</a>
+		</nav>
+		<table id="phoneTable" class="tables">
+			<caption>Top Selling Products</caption>
+			<thead>
+				<tr>
+					<th>Image</th>
+		        	<th><a href="javascript:SortTable(1,'T');">Brand</a></th>
+		        	<th><a href="javascript:SortTable(2,'T');">Model</a></th>
+		        	<th><a href="javascript:SortTable(3,'T');">OS</a></th>
+		        	<th><a href="javascript:SortTable(4,'N');">Screensize</a></th>
+		    	</tr>
+		    </thead>
+		    <tbody id="tablebody">
+		    </tbody>
+		</table>
+	    <table>
+		    <tr>
+		    	<td><input class ="firstBigOne" type="url" name="image" placeholder="Img Link" id="imageInput"></td>
+		    	<td><input type="text" name="brand" placeholder="Brand" id="brandInput"></td>
+		    	<td><input type="text" name="model" placeholder="Model" id="modelInput"></td>
+		    	<td><input type="text" name="os" placeholder="OS" id="osInput"></td>
+		    	<td><input type="number" name="screensize" placeholder="Screensize" min="3" max="10" id="screensizeInput"></td>
+		    </tr>
+		</table>
+
+		<label class="submitAction"><button id="create">Create</button></label>
+		<button id="resetData">Reset Data</button>
+
+		<p>Look for an item with an id</p>
+		<input type="number" name="id" id="id">
+		<button id="search">Search</button>
+		<button id="fetchAll">Fetch All Product Id's</button>
+
+
+		<section id="errorMessage"></section>
+
+		<section id="info"></section>
+
+		<button id="delete" class="hidden">Delete</button>
+		<section id="updateSection" class="hidden">
+		<h2>Update Your Product</h2>
+			<input type="url" name="image" placeholder="Img Link" id="updateImage">
+			<input type="text" name="brand" placeholder="Brand" id="updateBrand">
+			<input type="text" name="model" placeholder="Model" id="updateModel">
+			<input type="text" name="os" placeholder="OS" id="updateOS">
+			<input type="number" name="screensize" placeholder="Screensize" min="3" max="10" id="updateScreensize">
+			<button id="update">Update</button>
+		</section>
+
+		<table id="accessoryTable" class="tables">
+			<caption>Headphones</caption>
+			<tr>
+				<th>Image</th>
+				<th>Brand</th>
+	        	<th>Model</th>
+		        <th>Battery(hours)</th>
+		        <th>dB</th>
+		    </tr>
+		    <tr>
+		    	<td><a href="#jblCharge4"><img src="https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-78465322/fee_786_587_png/JBL-Charge-4--Zwart" alt="Products picture"></a></td>
+		    	<td><em>JBL</em></td>
+		    	<td>Charge 4</td>
+		    	<td>20</td>
+		    	<td>30</td>
+		    </tr>
+		    <tr>
+		    	<td><a href="#urbanearsPlattan2"><img src="https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-81088902/fee_786_587_png/URBANEARS-Plattan-2-Bluetooth-Love-To-Edition" alt="Products picture"></a></td>
+		    	<td><em>URBANEARS</em></td>
+		    	<td>Plattan 2</td>
+		    	<td>30</td>
+		    	<td>80</td>
+		    </tr>
+		    <tr>
+		    	<td><a href="#denonAH-D1200"><img src="https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-80733933/fee_786_587_png/DENON-AH-D1200-Zwart" alt="Products picture"></a></td>
+		    	<td><em>DENON</em></td>
+		    	<td>AH-D1200</td>
+		    	<td>15</td>
+		    	<td>90</td>
+		    </tr>
+		</table>
+
+		<section id="suggestion">
+			<h2 class="inlineHeader">Suggestions</h2>
+			
+			<p>
+				You may be interested in those products:
+			</p>
+
+			<ol>
+				<li>Samsung Galaxy S10</li>
+				<li>Apple Iphone 11</li>
+				<li>Apple Iphone 11 Pro Max</li>
+			</ol>
+		</section>
+
+		<section id="mobilePhoneProperties">
+			<h2 id="topProductTitle" class="inlineHeader">Top Selling Products' Properties</h2>
+			<div id="galaxyA50Properties">					
+				<h2 class="productTitle">Samsung Galaxy A50</h2>
+				<table class="productTable">
+					<tr>
+						<th>
+							<figure><img src="https://image-us.samsung.com/SamsungUS/home/mobile/mobile-accessories/pdp/ef-aa505cbegww/EF-AA505CB_002_Back_Black.jpg?$product-details-jpg$" alt="Galaxy A50"><figcaption>Price = $300</figcaption></figure>
+						</th>
+						<th>
+							<iframe src="https://www.youtube.com/embed/IDreNPM6-wk?rel=0"></iframe>
+						</th>
+					</tr>
+				</table>
+				<p>
+					<strong>Operating system:</strong> Android 9.0<br>
+					<strong>Memory capacity:</strong> 128 GB<br>
+					<strong>Specifications camera:</strong> 25 + 8 + 5 megapixel<br>
+					<strong>Screen diagonal (cm / inch):</strong> 16.26 cm / 6.4 inch<br>
+					<strong>Battery capacity:</strong> 4000 mAh
+				</p>
+				<ul id="firstListItems">
+					<li>Samsung Galaxy A50 black has a 6.4-inch Infinity-U display that fills almost the entire screen</li>
+					<li>Full HD + images with sharp contrasts thanks to Super <abbr title="active-matrix organic light-emitting diode">AMOLED</abbr> technology</li>
+					<li>Thanks to its small thickness (7.7 mm) and slim housing, the A50 fits comfortably in the hand</li>
+					<li>Take widescreen photos with the Ultra Wide camera, show depth and take 25 MP selfies</li>
+					<li>Correction techniques, such as Scene Optimizer and Flaw Detection, ensure that every photo succeeds</li>
+					<li>128 <abbr title="Gigabyte">GB</abbr> storage is expandable to 512 <abbr title="Gigabyte">GB</abbr> with microSD card</li>
+					<li>Log in easily and securely with the fingerprint scanner (under the screen) or face recognition</li>
+					<li>Use voice control, identify objects with your camera and switch quickly between apps via Bixby</li>
+					<li>128 <abbr title="Gigabyte">GB</abbr> of storage is expandable to 512 <abbr title="Gigabyte">GB</abbr> with a microSD card</li>
+					<li>The 4,000 mAh battery lasts all day</li>
+				</ul>
+				<p class="details">See more <a href="https://www.samsung.com/us/mobile/galaxy-a50/" target="_blank">details</a>.</p>					
+			</div>
+			
+			<div id="iphone8Properties">
+				<h2 class="productTitle">Apple Iphone 8</h2>
+				<table class="productTable">
+					<tr>
+						<th>
+							<figure><img src="https://www.att.com/shopcms/media/att/2018/shop/360s/8870319/6503B_1.jpg" alt="iPhone 8"><figcaption>Price = $500</figcaption></figure>
+						</th>
+						<th>
+							<iframe src="https://www.youtube.com/embed/5es64FPCO6k?rel=0"></iframe>
+						</th>
+					</tr>
+				</table>
+			
+				<p><strong>Operating system:</strong> iOS 13<br>
+				   <strong>Memory capacity:</strong> 64 GB<br>
+				   <strong>Camera specifications:</strong> 12 megapixel<br>
+				   <strong>Screen diagonal (cm / inch):</strong> 11.94 cm / 4.7 inch<br>
+				   <strong>Processor:</strong> A11 Bionic chip 64-bit + M11 motion coprocessor
+				</p>
+				<ul id="secondListItems">
+					<li>Fresh, innovative design with dust and waterproof housing</li>
+					<li>The clear 4.7-inch screen makes your photos, videos and games look lifelike</li>
+					<li>Efficient wireless charging thanks to the glass back</li>
+					<li>The A11 Bionic processor is energy efficient and can handle the toughest apps</li>
+					<li>Take beautiful photos and selfies with the 12-megapixel camera and 7<abbr title="Megapixel">MP</abbr> front camera</li>
+					<li>Stereo sound with deeper bass</li>
+				</ul>
+				<p class="details">See more <a href="https://www.apple.com/shop/buy-iphone/iphone-8" target="_blank">details</a>.</p>
+			</div>
+
+			<div id="iphoneXsProperties">
+				<h2 class="productTitle">Apple Iphone Xs</h2>
+				<table class="productTable">
+					<tr>
+						<th>
+							<figure><img src="https://image.businessinsider.com/5be1fb02e4218a3a6c0d56ae?width=1100&format=jpeg&auto=webp" alt="iPhone Xs"><figcaption>Price = $900</figcaption></figure>
+						</th>
+						<th>
+							<iframe src="https://www.youtube.com/embed/9m_K2Yg7wGQ?rel=0"></iframe>
+						</th>
+					</tr>
+				</table>
+				<p><strong>Operating system:</strong> iOS 13<br>
+				   <strong>Memory capacity:</strong> 64 GB<br>
+				   <strong>Camera specifications:</strong>12 + 12 megapixel<br>
+				   <strong>Screen diagonal (cm / inch):</strong> 14.73 cm / 5.8 inch<br>
+				   <strong>Processor:</strong> A12 Bionic processor<br>
+				</p>
+				<p id="iphoneXsDescription">
+					With the iPhone Xs, Apple is launching a new generation of smartphone. Experience even more viewing pleasure on the beautiful Super Retina HD edge-to-edge screen. The <abbr title="High Dynamic Range">HDR</abbr> and deeper black tones make the colors stand out even better on the large 5.8-inch-oled display. The screen rests on the well-known glass case, accented with stainless surgical steel. In addition, Apple has provided this iPhone with the reliable Face ID. The ideal protection to unlock your Xs, and the apps on it, without having to use a password and to complete payments.<br><br>This iPhone Xs is made to perform at any time. There is therefore a new piece of technology on the inside with the A12 Bionic processor with Neural Engine. This chip uses machine learning to give even more dimensions to augmented reality, playing games and of course photography and filming. You can do this with the 12 + 12-megapixel dual camera and front camera with 7 megapixel. Record your videos in 4K quality, shoot with the bokeh effect and determine the strength of the background, and make your selfies more unique with Animoji.<br>
+				</p>
+				<p class="details">See more <a href="https://www.apple.com/newsroom/2018/09/iphone-xs-and-iphone-xs-max-bring-the-best-and-biggest-displays-to-iphone/" target="_blank">details</a>.</p>
+			</div>
+		</section>
+
+		<section id="headphones">
+			<h2 class="inlineHeader">Headphone & Speaker's Properties</h2>
+			
+			<div id="jblCharge4">					
+				<h2 class="productTitle">JBL Charge 4</h2>
+				<table class="productTable">
+					<tr>
+						<th>
+							<figure><img src="https://images-na.ssl-images-amazon.com/images/I/71TdFLg4qqL._SL1500_.jpg" alt="JBL Charge 4"><figcaption>Price = $250</figcaption></figure>
+						</th>
+						<th>
+							<iframe src="https://www.youtube.com/embed/D4ZJP1NlEt4?rel=0"></iframe>
+						</th>
+					</tr>
+				</table>
+				<p>
+					<strong>Waterproof:</strong> Yes<br>
+					<strong>Battery life:</strong> 20 hours<br>
+					<strong>Powerbank function:</strong> Yes<br>
+					<strong>Size:</strong> Large<br>
+				</p>
+				<p class="details">See more <a href="https://www.jbl.com/bluetooth-speakers/JBL+CHARGE+4.html" target="_blank">details</a>.</p>					
+			</div>
+
+			<div id="urbanearsPlattan2">
+				<h2 class="productTitle">Urbanears Plattan 2</h2>
+				<table class="productTable">
+					<tr>
+						<th>
+							<figure><img src="https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-81088899/fee_786_587_png/URBANEARS-Plattan-2-Bluetooth-Love-To-Edition" alt="Urbanears Plattan2"><figcaption>Price = $100</figcaption></figure>
+						</th>
+						<th>
+							<iframe src="https://www.youtube.com/embed/K3GCIeIAjCU?rel=0"></iframe>
+						</th>
+					</tr>
+				</table>
+			
+				<p><strong>Bluetooth:</strong> Yes<br>
+				   <strong>Signal Transfer:</strong> Yes<br>
+				   <strong>Noise Canceling:</strong> No<br>
+				   <strong>Wearing method:</strong> On-ear<br>
+				   <strong>Integrated Microphone:</strong> Yes
+				</p>
+
+				<p class="details">See more <a href="https://www.urbanears.com/us/en/plattan-2-bluetooth.html?gclid=CjwKCAiAu9vwBRAEEiwAzvjq-83CNyuF2OxUlbeEO3ipqcNgmWjcM7wZTs3iFz8Yue32M8TVsWI-KxoCH6IQAvD_BwE&gclsrc=aw.ds" target="_blank">details</a>.</p>
+			</div>
+
+			<div id="denonAH-D1200">
+				<h2 class="productTitle">Denon AH-D1200</h2>
+				<table class="productTable">
+					<tr>
+						<th>
+							<figure><img src="https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-80733923/fee_786_587_png/DENON-AH-D1200-Zwart" alt="Denon AH-D1200"><figcaption>Price = $150</figcaption></figure>
+						</th>
+						<th>
+							<iframe src="https://www.youtube.com/embed/PbeX6KBpQUA?rel=0"></iframe>
+						</th>
+					</tr>
+				</table>
+				<p><strong>Bluetooth:</strong> Yes<br>
+				   <strong>Signal transfer:</strong> wired<br>
+				   <strong>Noise canceling:</strong> No<br>
+				   <strong>Wearing method:</strong> Over-ear<br>
+				   <strong>Integrated Microphone:</strong> Yes<br>
+				</p>
+				<p class="details">See more <a href="https://usa.denon.com/us/product/portableaudio/overear/ahd1200" target="_blank">details</a>.</p>
+			</div>
+		</section>
+
+		<section id="feedback">
+    		<h2 class="inlineHeader">Feedback</h2>
+	    	<p>
+	    		<textarea name="feedBack" rows="8" cols="50" maxlength="500" placeholder="Your comments"></textarea>
+	    	</p>
+	    	<p>
+     			<input type="submit" value="Submit">
+   			</p>
+   			<!-- I could not add a website to submit the data, so I did not add form tag and left it in the way it was-->
+    	</section>
+
+		<section id="contact">
+			<h2 class="inlineHeader">Reach Us</h2>
+			<dl>
+				<dt>Via E-mail:</dt>
+				<dd><a id="mail" href="mailto:emregdk2853@gmail.com">click here</a></dd>
+
+				<dt>Via Instagram:</dt>
+				<dd><a id="instagram" href="https://www.instagram.com/abelauna/" target="_blank">click here</a></dd>
+	    	</dl>
+	    	<pre>&copy; WebShop.com Top selling products January 2020</pre>
+			<!-- Just an icon at the end of the page -->
+    	</section>
+    	<script type="text/javascript" src="phoneTable.js"></script>
+	</body>
+</html>
+
+
+<!--
+REPORT
+First of all, I want to mention that it was a challenge for me. It took me a lot of time and I had to update my code many times due to the number of requirements in appendixes.
+In the beginning, I finished up the html part and added the necessary tags, attributes. Then I finished up the general screen style. Afterwards, I created a css file called Print.css aimed to be used when a user wants to print out the web page. To be able to create such a style sheet which will help me create a color-independent, printed page with only necessary parts of the web page, I eliminated the unnecessary parts of the web page and changed the background color. I tried my implementation with Safari and Chrome and at first, there was a slight but disturbing difference between created print page. Then, I added page-after/before-brek, orphan and widow statements into my code therefore, I was able arrange the blocks' places on the printed page.
+When it came to the smooth adjustment for mobile devices, I had to find a way to change my web page according to the web browsers resolution values. Especially, width property was a huge matter of fact. Because, length property can be handled by scrolling up/down but, it is not common to scrool horizontally in a mobile web site. That meant that I had to fit my stuffs into the screen according to browsers width or in best case device width. That is why I changed all of the constant attribute values into the adapted values in terms of the browser width. So, I could arrange such a page which changes its contents size according to the browser width. I took 480 px as minimum width value to apply the mentioned style sheet and changed all constant values with the appropriate vw values. I used viewport values width property conciously because as I mentioned before I had to concern the contents widths.
+
+If I arranged my main screen css file according to the browsers width, I would not have to create another css file for mobile devices (in this case for devices with width lower than 480).
+
+Emre Furkan Guduk 2667887
+
+
+ -->

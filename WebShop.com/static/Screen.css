@@ -1,0 +1,246 @@
+h1{
+	width: 75%;
+	font-family: "arial";
+	font-weight: bold;
+	font-size: 50px;
+	font-style: oblique;
+	font-variant: small-caps;
+	text-align: center;
+	margin: auto;
+	background-image: url('https://media.istockphoto.com/photos/texture-dark-concrete-floor-picture-id621925576?k=6&m=621925576&s=612x612&w=0&h=H4rph08J2vSJz_crupTLvHf5OKW0olvoRJzaAK37Yhg='); 
+	background-repeat: repeat;
+	color: white;
+}
+
+.hidden{
+	display: none;
+}
+
+#errorMessage{
+	color: red;
+	margin: 10px;
+	font-size: 20px;
+}
+#info{
+	margin: 25px 25px;
+}
+a.inlineTitles{
+	display: inline-block;
+	font-weight: bolder;
+	margin: 50px;
+}
+
+table > caption{
+	width: 50%;
+	background-color: transparent;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-weight: bolder;
+	font-size: 30px;
+	text-align: left;
+	font-family: "arial";
+	font-style: italic;
+	color: #00b3c4;
+	border-bottom-color: white;
+	border-bottom-style: dashed;
+	border-bottom-width: 2px;
+
+}
+
+.inlineHeader{
+	width: 50%;
+	background-color: transparent;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-weight: bolder;
+	font-size: 30px;
+	text-align: left;
+	font-family: "arial";
+	font-style: italic;
+	color: #00b3c4;
+	border-bottom-color: white;
+	border-bottom-style: dashed;
+	border-bottom-width: 2px;
+
+}
+
+h2.productTitle{
+	background-color: black;
+	width: 50%;
+	color: white;
+  	border-spacing: 5px 1rem;
+  	border-width: 5px;
+  	border-style: dotted;
+  	border-color: red;
+
+}
+
+body{
+	background: lightblue url('http://www.internform.com/image4.jpg') repeat fixed center;
+	font: 15px arial, sans-serif;
+	color: #00b3c4;
+}
+
+table{
+	caption-side: top;
+	width: 100%;
+}
+
+table.productTable{
+	border: 2px ridge white;
+}
+
+th{
+	color: darkgrey;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #000000;
+	padding: 15px;
+
+}
+
+td{
+	padding: 20px;
+	border-bottom-width: medium;
+	border-bottom-style: solid;
+	border-bottom-color: white; 
+	text-align: center;
+	color: white;
+}
+strong{
+	color: #ffffff;
+}
+
+figcaption{
+	text-indent: 180px;
+	color: white;
+	font-size: 30px;
+	font-style: italic;
+	font-weight: bolder;
+	font-family: "Times New Roman";
+	text-align: left;
+	text-decoration: underline;
+}
+
+a{
+	color: white;
+}
+
+
+a:link{
+	color: white;
+}
+
+a:visited{
+	display: inline;
+	color: lightgreen;
+}
+
+a:hover{
+	color: yellow;
+}
+
+a:active {
+   color: purple;
+}
+
+input:focus{
+	background-color: yellow;
+}
+
+abbr {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+img{
+	width: 300px;
+	height: 360px;
+	vertical-align: baseline;
+}
+
+.firstBigOne{
+	margin-left: 10vw;
+	margin-right: 8vw;
+}
+#resetData{
+	margin: 1vw 48vw;
+}
+
+iframe{
+	width: 600px;
+	height: 400px;
+}
+
+#contact h2{
+	margin-top: 100px;
+}
+
+.inlineHeader{
+	width: 50%;
+	background-color: transparent;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-weight: bolder;
+	font-size: 30px;
+	text-align: left;
+	font-family: "arial";
+	font-style: italic;
+	color: #00b3c4;
+	border-bottom-color: white;
+	border-bottom-style: dashed;
+	border-bottom-width: 2px;
+
+}
+
+#mail, #instagram{
+	display: inline-block;
+	color: white;
+	text-transform: capitalize;
+	padding-bottom: 30px;
+	margin-left: 1px;
+	margin-right: 20px;
+}
+
+.submitAction{
+	margin-top: 1vw;
+	text-align: center;
+	display: block;
+}
+
+.titleContainer{
+	text-align: center;
+	display: block;
+}
+
+#iphoneXsDescription{
+	text-indent: 25px;
+}
+
+#firstListItems{
+	list-style-type: circle;
+	list-style-position: inside;
+	list-style-image: none;
+}
+
+#secondListItems{
+	list-style: square outside none;
+}
+
+#contact{
+	float: right;
+	overflow: auto;
+}
+
+#feedback{
+	margin-top: 45px;
+	float: left;
+}
+
+ol li{
+	color: white;
+}
+
+
+

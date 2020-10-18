@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1 width=device-width">
+		<title>My Staffs</title>
+	</head>
+  	<body>
+  		<section id="searchStaff">
+			<h1>How to Use</h1>
+			<pre>
+To be able to use this api, you only need to run the server. There are a couple of request handlers in the server. Those are:
+
+GET,
+POST,
+PUT,
+DELETE
+
+If you send a get request to '/api/fetchAll' , it will bring every item's id numbers.
+If you send a get request to '/api/fetch', it will fetch every item held in database.
+If you send a get request to '/api/get/:phoneId' where phoneId is the id for the element you are looking for, it will fetch the data about the mentioned element.
+If you send a delete request to '/api/delete', it will delete the item (in the request body) from the database.
+If you send a delete request to '/api/reset', it will reset the database.
+If you send a post request to '/api/create', it will create a new item which will be held in database.
+If you send a put request to '/api/update', it will update the item (specified in the request body).
+</pre>
+		</section>
+	</body>
+</html>
